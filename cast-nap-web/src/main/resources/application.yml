@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    database: "MYSQL"
+    hibernate:
+        ddl-auto: "none"
+    generate-ddl: "false"
+    show-sql: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.MySQL5Dialect"
+  datasource:
+    platform: "mysql"
+    url: "jdbc:mysql://castnap.crmqajhwpqgy.us-east-2.rds.amazonaws.com:3306/castnap?useUnicode=true&characterEncoding=utf8&amp"
+    username: "funground"
+    password: "funground1!"
+    testWhileIdle: "true"
+    validationQuery: "SELECT 1"
+  database:
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+
